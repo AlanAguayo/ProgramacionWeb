@@ -1,0 +1,29 @@
+Haga una aplicacion WEb que le permita a un usuario Seleccionar una jugada de cartas y almacene en la base de datos que cartas eligio en su jugada.
+La plataforma debe de loguear al usuario.
+Mostrarle aleatoriamente 5 cartas.
+Controlar 
+ - Cambiar ciertas cartas, si decide cambiar debe de alguna forma marcar cuales cartas deja y se le deben de mostrar las nuevas cartas con las anteriores, puede hacer este cambio hasta 2 veces.
+- Registrar Jugada. Una vez que decidio que esa es su jugada debe llenar una caja de apuesta, en donde definira su apuesta, y registra en la base de datos la apuesta y las cartas de la jugada.
+- Una vez que se registra la jugada, se le debe de mostrar su jugada, su apuesta y 5 cartas aleatorias que representarian al contrincante.
+
+
+Debe de usar HTML,PHP, con jS o jquery.
+-----------------------------------------------------
+Tip de ayuda. El aletorio se pude generar desde JS 
+<script type="text/javascript">
+function ejemplo1() {
+var aleatorio = Math.random();
+alert("Número aleatorio entre 0 y 1:  "+ aleatorio);}
+</script>
+-------------------------------------------------------
+o desde PHP,
+int rand ( void )
+int rand ( int $min , int $max )
+
+Si se invoca sin los argumentos opconales min y max, rand() devuelve un entero pseudoaleatorio entre 0 y getrandmax(). Para obtener un número aleatorio entre 5 y 15 (incluidos), por ejemplo, use rand(5, 15). 
+------------------------
+Sugerencia de la BD
+tabla usuarios 
+id pwd nombre
+tabla jugada
+id idUsuario c1 c2 c3 c4 c5 apuesta.

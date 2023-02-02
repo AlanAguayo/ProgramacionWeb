@@ -1,0 +1,105 @@
+Distribuciones 
+
+Directorios XAMPP
+-htdocs
+-mysql
+
+Puertos
+80 - http
+443 - https
+
+
+Cambiar Puertos
+httpd.conf
+php.ini
+my.ini
+
+
+etiqueta para php
+<?php ?>
+
+se pueden quitar los mensajes de error desde el archivo 
+de configuracion de php (php.ini - display_errors=of)
+
+<? ?> etiqueta corta (se configura en php.ini - short_open_tag=on)
+
+correo liberado
+
+------------------------------------------------------
+
+php lenguaje atipico
+
+java fuertemente tipificado
+
+se puede imprimir con echo o con println
+$ -> simbolo de variable
+el codigo php tiene como fnalidad crear codigo html
+
+pow(base, exp);
+
+la programacion estructural de java es igual a de javascript
+
+para concatenar cadenas usa .
+
+lo mejor es usar posts y gets
+
+var_dump($)
+
+Imprimir objetos
+
+
+Funciones para dbs
+mysqli
+pg
+
+Control y/o accesos a una base de datos 
+1) Crear la conexion
+puerto: 3306
+variable que guarde conexion
+$conexion=mysqli_connect(localhost:puerto, usuario, password, base datos);
+
+isset() regresa true false -> revisa si la variable existe
+SMTPDebug se deja en 1 cuando se esta desarrollando, 0cuantdo ya termina el desarrollo
+
+xampp/tmp -> Contiene las sesiones (guarda SO, navegador, IP)
+Todas las cargas se guardan en la carpeta temporal con extension .tmp
+
+Arreglos en php (Arreglos asociativos), por medio de objetos
+$datos[4]=3.67;
+$datos[3]=3;
+$datos[1]="texto";
+$datos["numero"]=3312;
+
+count($campos) == $campos.lenght
+in_array - Realizar busquedas
+
+$datos = array(4,4.5,"a",13); - Los nombres seran 0,1,2,3,4,...,n
+$datos = array("puesto"=>4,
+                "porcentaje"=>4.5,
+                "a",13); 
+
+                foreach($arreglo => $nombreCampo as $valor) ->Imprimir arreglos
+
+if(!in_array($campo, array("accion")))suprimir todos los arreglos accion
+
+--------------------------------------------------------------------------------------
+
+JS
+
+Lenguaje del lado del cliente
+
+html - css Control de la vista
+
+Angular Google
+
+head -> definir objetos
+
+body -> acciones especificas
+
+no es necesario definir variables
+
+Todo funciona con DOM documents
+
+window
+document
+document.write
